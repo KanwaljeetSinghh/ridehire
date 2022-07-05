@@ -1,0 +1,16 @@
+.markerContainer{
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.03em;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    z-index: 1;
+    position: absolute;
+}
+.markerContainer:hover{
+    z-index: 2;
+}

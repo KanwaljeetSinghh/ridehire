@@ -1,0 +1,77 @@
+.map__container{
+    width: 48%;
+}
+.data__listing{
+    width: 52%;
+}
+
+.data__listing.full__listing_view{
+    width: 100%;
+}
+.data__listing_wrapper{
+    max-width: 918.4px;
+    margin: 0 0 0 auto;
+    width: 100%;
+}
+.full__listing_view .data__listing_wrapper{
+    max-width: 1760px;
+    margin: 0 auto;
+}
+.popular__card{
+    padding: 15.5px;
+    min-height: 172px;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: inherit;
+    background-repeat: no-repeat;
+}
+.popular__card:before{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(20.78deg, #000000 7.25%, rgba(0, 0, 0, 0) 50.61%);
+}
+.cards__wrapper{
+    grid-template-columns: repeat( auto-fit, minmax(289px, 1fr) );
+    gap:25px;
+}
+
+.cards__wrapper img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card__body{
+    padding:8.5px 15.5px 13px; 
+}
+
+.favorite__icon{
+    top:12px;
+    right:12px;
+    position: absolute;
+    z-index: 2;
+}
+
+@media screen and (max-width:1900px) {
+    
+}
+
+@media screen and (max-width:1067px){
+    .map__container{
+        display: none;
+    }
+    .data__listing{
+        width: 100%;
+    }
+    .data__listing_wrapper{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:567px){
+    .popular__card{
+        min-height: 150px;
+    }
+}
